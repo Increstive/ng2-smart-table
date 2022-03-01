@@ -1,9 +1,15 @@
 {
-  "name": "ng2-smart-table",
+  "name": "@boonuz/ng2-smart-table",
   "version": "1.7.2",
   "description": "Angular Smart Table",
   "author": "akveo",
   "license": "MIT",
+  "repository": {
+    "url": "git://github.com/boonuz/ng2-smart-table.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "dependencies": {
     "lodash": "^4.17.10",
     "tslib": "^2.0.0"

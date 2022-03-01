@@ -1,6 +1,9 @@
 {
-  "name": "ng2-smart-table",
+  "name": "@boonuz/ng2-smart-table",
   "version": "1.7.2",
+  "repository": {
+    "url": "git://github.com/boonuz/ng2-smart-table.git"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -10,11 +13,14 @@
     "docs:gh-pages": "npm run build:demo -- --base-href '/ng2-smart-table/' && ngh --dir ./dist/demo",
     "test": "ng test",
     "release": "npm run build:lib && npm run publish",
-    "publish": "npm publish --access=public dist/ng2-smart-table",
+    "publish": "npm publish dist/ng2-smart-table",
     "changelog": "standard-changelog -p angular",
     "postinstall": "npm run build:lib",
     "lint": "ng lint",
     "e2e": "ng e2e"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
   },
   "private": true,
   "dependencies": {
