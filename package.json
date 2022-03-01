@@ -5,13 +5,14 @@
     "ng": "ng",
     "start": "ng serve",
     "build:demo": "ng build demo --aot --prod",
-    "build:lib": "ng build ng2-smart-table --prod",
+    "build:lib": "ng-packagr -p projects/ng2-smart-table/ng-package.json",
     "build:ci": "npm run build:demo && npm run build:lib",
     "docs:gh-pages": "npm run build:demo -- --base-href '/ng2-smart-table/' && ngh --dir ./dist/demo",
     "test": "ng test",
     "release": "npm run build:lib && npm run publish",
     "publish": "npm publish --access=public dist/ng2-smart-table",
     "changelog": "standard-changelog -p angular",
+    "postinstall": "npm run build:lib",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
@@ -34,6 +35,7 @@
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~13.2.5",
+    "@angular-devkit/build-ng-packagr": "~0.1001.5",
     "@angular/cli": "~13.2.5",
     "@angular/compiler-cli": "~13.2.4",
     "@angular/language-service": "~13.2.4",
