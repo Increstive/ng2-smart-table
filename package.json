@@ -1,8 +1,8 @@
 {
-  "name": "@boonuz/ng2-smart-table",
+  "name": "@increstive/ng2-smart-table",
   "version": "1.7.2",
   "repository": {
-    "url": "git://github.com/boonuz/ng2-smart-table.git"
+    "url": "git://github.com/increstive/ng2-smart-table.git"
   },
   "scripts": {
     "ng": "ng",
@@ -19,10 +19,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
-  },
-  "private": true,
+  "private": false,
   "dependencies": {
     "@angular/animations": "~13.2.4",
     "@angular/common": "~13.2.4",
@@ -41,7 +38,6 @@
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~13.2.5",
-    "@angular-devkit/build-ng-packagr": "~0.1001.5",
     "@angular/cli": "~13.2.5",
     "@angular/compiler-cli": "~13.2.4",
     "@angular/language-service": "~13.2.4",
@@ -57,7 +53,7 @@
     "karma-coverage-istanbul-reporter": "~3.0.2",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "^1.5.0",
-    "ng-packagr": "^13.2.1",
+    "ng-packagr": "~13.2.1",
     "protractor": "~7.0.0",
     "standard-changelog": "^2.0.11",
     "ts-node": "~7.0.0",
