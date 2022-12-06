@@ -11,8 +11,6 @@
     optgroup,
     select,
     textarea {
-      color: inherit;
-      font: inherit;
       margin: 0;
     }
 
@@ -32,20 +30,16 @@
           font-weight: bold;
         }
         section {
-          font-size: .75em;
           font-weight: bold;
         }
         td,
         th {
-          font-size: .875em;
           margin: 0;
-          padding: 0.5em 1em;
         }
       }
     }
 
     a {
-      color: #1e6bb8;
       text-decoration: none;
       &:hover {
         text-decoration: underline;
